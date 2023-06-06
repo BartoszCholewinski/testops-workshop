@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # Endpoint of the API
-api_endpoint = "http://docker-compose_api_1:3000/hello"
+api_endpoint = "http://docker-compose-api-1:3000/hello"
 
 @app.route('/')
 def home():
