@@ -78,7 +78,7 @@ pipeline {
                     script {
                         sh 'npm install'
                         try {
-                            sh 'CYPRESS_BASE_URL=localhost:3000 cypress run'
+                            sh 'CYPRESS_BASE_URL=http://localhost:3000 cypress run'
                         }
                         catch (err) {
                             print(err)
