@@ -76,6 +76,7 @@ pipeline {
             steps {
                 dir('pipeline_ex/') {
                     script {
+                        sh 'npm install'
                         try {
                             sh 'CYPRESS_BASE_URL=localhost:3000 cypress run'
                         }
